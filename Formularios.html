@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>FORMULARIOS</h1>
+
+    <form action = "../index.html"method = "POST">
+        <h3>Texto</h3>
+        <label for ="nombre"> Nombre de Usuario: </label>
+        <input type ="text" name = "nombre" id ="nombre" maxlength="50"> 
+
+        <h3>Contraseña</h3>
+        <label for  ="clave">Contrasseña: </label>
+        <input type = "password" name = "clave" id = "clave" maxlength="15"> 
+
+        <h3>Enviar - Boton</h3>
+        <input type = "submit" value = "Enviar ...">
+
+        <h3>Area Texto </h3>
+        <textarea name = "comentario" id = "comentario" cols="30" rows="10"></textarea>
+        
+        <h3> Spinner</h3>
+        <label for = "Spinner">Entrada Numerica: </label>
+        <input type = "number" name = "spinner" id = "spinner" min="1" max ="10" step = "1" placeholder="[Seleccione]" required>
+
+<!--#value ="1"-->
+
+        <h3>Fecha</h3>
+        <label for =  "Fecha">Fecha: </label>
+        <input type = "date" name= "fecha" id ="fecha">
+
+        <h3>Fecha/Hora</h3>
+        <label for =  "Fecha/Hora">Fecha/Hora: </label>
+        <input type = "datetime-local" name= "fecha" id ="fecha">
+
+        <h3>Hora</h3>
+        <label for =  "Hora">Hora: </label>
+        <input type = "time" name= "hora" id ="hora">
+
+        <h3>Semana</h3>
+        <label for =  "Semana">Semana: </label>
+        <input type = "week" name= "Semana" id ="Semana">
+
+        <h3>Radio</h3>
+        <label for =  "Genero">Genero: </label>
+        <input type = "radio" name= "genero" id ="genero" value "F"> Femenino
+        <input type = "radio" name= "genero" id ="genero" value "M"> Masculino
+
+        <h3>Lista Desplegable</h3>
+        <label for =  "Documento">Tipo Documento:  </label>
+        <select name = "tipoDocumento" id ="tipoDocumento"> Tipo Documento
+            <option value ="TI">Tarjeta de Identidad</option>
+            <option value ="CC"selected>Cedula de Ciudadania</option>
+            <option value ="CE">Cedula de Extranjeria</option>
+        </selection>
+
+        <h3>Adjuntar un archivo</h3>
+
+        <label for = "archivo"> Archivo: </label>
+        
+        <input type = "file" name = "archivo" id="archivo">
+
+    </form>
+
+</body>
+</html>
